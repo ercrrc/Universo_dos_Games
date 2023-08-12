@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-color: rgb(230, 230, 242);
+}
+
+.menu {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+nav li {
+    text-transform: uppercase;
+}
+
+.menu .image img {
+    align-items: center;
+}
+
+.image img {
+    width: 550px;
+    display: flex;
+    display: grid;
+}
+
+header .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(68, 68, 243);
+    color: #ccc;
+    padding: 16px 0;
+}
+
+.menu ul,
+li,
+a {
+    display: flex;
+    padding: 8px;
+    color: #ccc;
+    text-decoration: none;
+}
+
+.loja img {
+    height: 450px;
+    padding: 16px 0;
+}
+
+.menu h2 {
+    border-bottom: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.menu h2, p {
+    font-size: 1.5em;
+    padding: 16px;
+}
+
+.about {
+    flex: 1;
+}
+
+#jogos {
+    max-width: 1024px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#jogos .container ul, li, img {
+    width: 50%;
+}
+
+#jogos .container ul, li, h3 {
+    padding: 5px;
+    display: block;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+#jogos .container ul, li, p {
+    font-size: 13px;
+    padding: 5px;
+    display: block;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+#jogos .container ul, li, button {
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.titulo {
+    max-width: 124px;
+    margin: 0 auto;
+}
+
+.container h2 {
+    border-bottom: 1px solid #ccc;
+    padding: 8px;
+}
+
+.container img {
+    height: 200px;
+    width: 100%;
+    padding: 8px;
+}
+
+.container ul, li, h3, p {
+    font-style:italic;
+    color:black;
+}
+
+button {
+    background-color: rgb(31, 238, 31);
+    border: none;
+    padding: 8px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+
+@media screen and (max-width: 767px){
+    .menu {
+        display: block;
+    }
+
+    header .menu {
+        display: block;
+        align-items: center;
+    }
+
+    #jogos {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1023px){
+    #jogos {
+        display: flex;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    
+}
+
